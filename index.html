@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importação Social Midias-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>T-Joks Equipamentos</title>
+</head>
+<body>
+    <header class="header" id="backToTop">
+        <img src="/tjoks.png" alt="imagem" class="logoNavBar">
+        
+        <div class="headerBtnGroup">
+            <button class="navBarBtn"><a href="#quemSomos"></a> Quem Somos</button>
+            <button class="navBarBtn"><a href="#equipamentos"></a> Equipamentos</button>
+            <button class="navBarBtn"><a href="#peças"></a> Peças</button>
+            <button class="navBarBtn"><a href="#cotacao"></a> Cotação</button>
+        </div>
+    </header>
+  
+    <div class="slider">
+        <div class="slides">
+            
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            
+            <div class="slide first">
+                <img src="/imgs/s1.jpg" alt="imagem1">
+            </div>
+            <div class="slide">
+                <img src="/imgs/s2.jpg" alt="imagem2">
+            </div>
+            <div class="slide">
+                <img src="/imgs/s3.jpg" alt="imagem3">
+            </div>
+            <div class="slide">
+                <img src="/imgs/s4.jpg" alt="imagem4">
+            </div>
+
+            
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div> 
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        
+        </div>
+    </div> 
+    <main>
+        <section class="sobreNos" id="quemSomos">
+            <h1>Sobre Nós</h1>
+            <p>A nossa história teve seu início em 1974, na atividade comercial e técnica para equipamentos de Britagem e Asfalto, buscando sempre aperfeiçoar seus conhecimentos e dividir com nosso maior patrimônio - o "CLIENTE". <br>
+            Somos uma empresa com o maior tesouro de todos: AS PESSOAS. Desenvolver e fornecer soluções de britagem e asfalto é nosso maior desafio, desde então, e acreditamos que temos muito a dividir com nossos clientes e amigos. Estamos atuando a mais de 40 anos e ainda é preciso fazer mais. <br> Não deixe de nos conhecer e temos certeza que serão surpreendidos com o que temos a oferecer.</p>
+        </section>
+        <h1 class="mineiracao">Equipamentos de Mineiração</h1>
+        <section id="equipamentos">
+            <!--Flipcard-->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="/imagens/alimentador.jpg" alt="Imagem 1">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi necessitatibus ab quam quisquam, iure consectetur!</p>
+                    <button>Cotação</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                  </div>
+                  <div class="flip-card-back">
+                    <button>Botão 2</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                  </div>
+                  <div class="flip-card-back">
+                    <button>Botão 3</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="imagem4.jpg" alt="Imagem 4">
+                  </div>
+                  <div class="flip-card-back">
+                    <button>Botão 4</button>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+        <section id="peças"></section>
+        <!--Formulario-->
+        <section id="cotacao" class="cotacao">
+            <h2>Contato para Cotação</h2>
+            <form action="" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" autocomplete="off" required placeholder="Digite seu nome...">
+                <label>E-mail</label>
+                <input type="email" name="email" autocomplete="off" required placeholder="Digite seu E-mail...">
+                <label>Mensagem</label>
+                <textarea name="mensagem" id="" cols="30" rows="10" required placeholder="Digite sua mesagem..."></textarea>
+                <button type="submit">Enviar Solicitação</button>
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            </form>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer" id="quemSomos">
+        <address class="endereco">
+            Rua Liberdade Nº 33 / sala 902 - Edifício Centro Empresarial do Lago <br> 
+            Canoas/RS - Cep: 92020-240 <br>
+            Fones: (51)3104-3344 / 4108-1441 <br>
+            E-mail: tjoks@faitec.com.br
+        </address>
+            <div class="social">
+                <a href="#"> <i class="fab fa-instagram" alt="instagram"></i></a>
+                <a href="#"> <i class="fab fa-facebook" alt="facebook"></i></a>
+                <a href="#"> <i class="fab fa-linkedin" alt="linkedin"></i></a>
+            </div>
+        <button class="btnFooter"><a href="#backToTop"class="footerAnchor">Volta Para o Topo</a></button>
+    </footer>
+    <script src="javascript.js"></script>
+
+
+</body>
+</html> 
