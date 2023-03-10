@@ -64,12 +64,74 @@
   width: 1000px;
   height: 400px;
 }
-.manual-navigation {
-  position: absolute;
-  width: 1000px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
+
+/* Ajuste carrosel início */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-dots button {
+    background: #ccc;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .carousel-dots button.active {
+    background: #333;
+  }
+  
+
+/* Ajuste carrosel fim */
+
+/*
+.slider{
+    margin: 0 auto;
+    width: 1000px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .manual-btn {
   border: 2px solid rgba(255, 0, 0, 0.78);
@@ -547,3 +609,101 @@ i:hover {
     height: 15px;
   }
 }
+.btnFooter{
+    font-size: 16px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0,7s;
+}
+.social{
+    display: flex;
+    gap: 25px;
+ }
+ i{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+ }
+ i:hover{
+    color:  rgba(255, 0, 0, 0.779);
+    transition: 1s;
+ }
+
+ /* responsividade */
+ @media (max-width: 738px){
+    .header{
+        justify-content: center;
+        align-items: center;
+    }
+    .sobreNos{
+        width: 96%;
+        height: auto;
+        margin: 10px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }  
+    /* .slider .slides .slides img .manual-navigation .navigation-auto{
+        width: 96%;
+        height: auto;
+    
+    } */
+}
+ @media (max-width: 425px){
+    .logoNavBar{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerBtnGroup{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobreNos{
+        width: 96%;
+        height: auto;
+        margin: 10px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+ @media (max-width: 320px){
+    .logoNavBar{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerBtnGroup{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobreNos{
+        width: 96%;
+        height: auto;
+        margin: 10px 10px;
+        flex-wrap: wrap;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+ }

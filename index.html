@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header" id="backToTop">
-      <img src="/tjoks.png" alt="imagem" class="logoNavBar" />
+      <img src="tjoks.png" alt="imagem" class="logoNavBar" />
 
       <div class="headerBtnGroup">
         <button class="navBarBtn"><a href="#quemSomos"></a> Quem Somos</button>
@@ -31,42 +31,19 @@
         <button class="navBarBtn"><a href="#cotacao"></a> Cotação</button>
       </div>
     </header>
-
-    <div class="slider">
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1" />
-        <input type="radio" name="radio-btn" id="radio2" />
-        <input type="radio" name="radio-btn" id="radio3" />
-        <input type="radio" name="radio-btn" id="radio4" />
-
-        <div class="slide first">
-          <img src="/imgs/s1.jpg" alt="imagem1" />
+    
+    <!-- In�cio carrosel -->
+    <div class="carousel-container">
+        <div class="carousel">
+        <img src="imgs\s1.jpg" alt="Imagem 1">
+        <img src="imgs\s2.jpg" alt="Imagem 2">
+        <img src="imgs\s3.jpg" alt="Imagem 3">
+        <img src="imgs\s4.jpg" alt="Imagem 4">
         </div>
-        <div class="slide">
-          <img src="/imgs/s2.jpg" alt="imagem2" />
-        </div>
-        <div class="slide">
-          <img src="/imgs/s3.jpg" alt="imagem3" />
-        </div>
-        <div class="slide">
-          <img src="/imgs/s4.jpg" alt="imagem4" />
-        </div>
-
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div>
-      </div>
-
-      <div class="manual-navigation">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-      </div>
+        <div class="carousel-dots"></div>
     </div>
+    <!-- Fim carrosel -->
+    
     <main>
       <section class="sobreNos" id="quemSomos">
         <h1>Sobre Nós</h1>
@@ -173,6 +150,7 @@
           />
         </form>
       </section>
+   
     </main>
 
     <!--Footer-->
